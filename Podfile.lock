@@ -1,0 +1,16 @@
+PODS:
+  - FrameworkDemo (1.0.0)
+
+DEPENDENCIES:
+  - FrameworkDemo (from `/Users/administrator/Desktop/Zee5Demo/FrameworkDemo/FrameworkDemo.podspec`)
+
+EXTERNAL SOURCES:
+  FrameworkDemo:
+    :path: "/Users/administrator/Desktop/Zee5Demo/FrameworkDemo/FrameworkDemo.podspec"
+
+SPEC CHECKSUMS:
+  FrameworkDemo: 6703522940475ef8865822c82a4b40a10c7089e8
+
+PODFILE CHECKSUM: aa2f9e76627796ce799efd91c1eb51c719c5acf2
+
+COCOAPODS: 1.9.3

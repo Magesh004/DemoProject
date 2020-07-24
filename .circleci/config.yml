@@ -1,0 +1,16 @@
+version: 2.1 # use version 2.1 of CircleCI
+jobs: # a basic unit of work in a run
+  build: # runs not using `Workflows` must have a `build` job as entry point
+    macos:  # indicate that we are using the macOS executor
+      xcode: "10.3.1" # indicate our selected version of Xcode
+    steps: # a series of commands to run
+      - checkout  # pull down code from your version control system.
+      - run:
+          name: Build Application
+          command: xcodebuild
+      - run:
+          name: Compress app for storage
+          command: zip -r app.zip build/Release/demo.app
+      - store_artifacts:
+          path: app.zip
+          destination: app
